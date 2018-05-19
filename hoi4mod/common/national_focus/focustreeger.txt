@@ -1,0 +1,46 @@
+focus_tree = {
+id = 'focustreeger'
+country = {
+factor=0
+modifier = {
+add = 10
+tag = GER
+}
+}
+default = no
+#Custom focuses start here
+#Focus for War with the Amerikanisch 
+		focus = { 
+		id = warwiththeamerikanisch 
+		icon = GFX_goal_generic_territory_or_war 
+		ai_will_do = { factor = 0 } 
+ x =4 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ declare_war_on= {  
+ target = USA 
+ type = annex_everything  
+ } 
+ } 
+ }#Focus for Neu Berlin 
+		focus = { 
+		id = neuberlin 
+		icon = GFX_focus_rocketry 
+		ai_will_do = { factor = 0 } 
+ x =3 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = warwiththeamerikanischwarwiththeamerikanisch} 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ 361 = { set_demilitarized_zone = yes } 
+ GER = { transfer_state = 361 } 
+ news_event = news_event.334 
+ } 
+ }#End of focuses 
+}
