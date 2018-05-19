@@ -269,6 +269,10 @@ set_autonomy = {
 		target = ITA
 		autonomous_state = autonomy_integrated_puppet
 	}
+set_autonomy = {
+		target = TUR
+		autonomous_state = autonomy_integrated_puppet
+	}
 add_ideas = {
 	sour_loser
 	general_staff
