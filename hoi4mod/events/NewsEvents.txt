@@ -12880,7 +12880,7 @@ news_event = {
 	}
 }
 
-#Mers-El-Kebir - Attack
+#Nuke
 news_event = {
 	id = news.334
 	title = news.334.t
@@ -12894,7 +12894,7 @@ news_event = {
 	option = {
 		name = news.334.a
 		trigger = {
-			NOT = { original_tag = FRA }
+			trigger = { TAG = GER }
 		}
 	}
 	
